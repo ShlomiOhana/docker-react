@@ -8,7 +8,7 @@ before_install:
 script: 
   - docker run -e CI=true shlomio/docker-react npm run test
 
-  deploy:
+deploy:
     provider: elasticbeanstalk
     region: "eu-north-1"
     app: "frontend"
